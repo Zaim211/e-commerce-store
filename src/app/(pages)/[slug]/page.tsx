@@ -29,7 +29,6 @@ export default async function Page({ params: { slug = 'home' } }) {
       draft: isDraftMode,
     })
     categories = await fetchDocs<Category>('categories')
-  
   } catch (error) {
     console.log(error)
   }

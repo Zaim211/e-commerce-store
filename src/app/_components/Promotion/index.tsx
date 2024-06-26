@@ -66,4 +66,3 @@ const StatBox = ({ label, value }: { label: string; value: number }) => (
 )
 
 export default Promotion
-
