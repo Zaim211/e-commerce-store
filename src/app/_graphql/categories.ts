@@ -1,4 +1,4 @@
-export const CATEGORIES = `categories {
+export const PRODUCT_CATEGORIES = `categories {
   title
   id
   breadcrumbs {
@@ -6,3 +6,20 @@ export const CATEGORIES = `categories {
     label
   }
 }`
+
+export const CATEGORIES = `
+query {
+  Categories {
+    docs {
+      title
+      id
+      media {
+        alt
+        url
+        width
+        height
+      }
+    }
+  }
+}
+`
